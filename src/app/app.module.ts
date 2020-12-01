@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ProduitsComponent } from './produits/produits.component';
+import { AddProduitComponent } from './add-produit/add-produit.component';
+import { FormsModule } from '@angular/forms';
+import { UpdateProduitComponent } from './update-produit/update-produit.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProduitsComponent,
+    AddProduitComponent,
+    UpdateProduitComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
